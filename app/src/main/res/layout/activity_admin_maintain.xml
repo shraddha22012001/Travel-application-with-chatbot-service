@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkhome"
+    tools:context=".Admin.AdminMaintainActivity">
+
+<ScrollView
+android:layout_below="@+id/welcometag"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/mainspot_btn"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/mainspots"
+        android:layout_marginTop="20dp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        ></ImageView>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Spots"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:textSize="20dp"
+        android:textColor="#031A2C"
+        android:gravity="center_horizontal"></TextView>
+    <ImageView
+        android:id="@+id/Hotels_btn"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/hotels"
+        android:layout_marginTop="20dp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        ></ImageView>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hotels"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:textSize="20dp"
+        android:textColor="#031A2C"
+        android:gravity="center_horizontal"></TextView>
+    <ImageView
+        android:id="@+id/resturants_btn"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/restaurants"
+        android:layout_marginTop="20dp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        ></ImageView>
+    <TextView
+        android:textColor="#031A2C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resorts"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"></TextView>
+    <ImageView
+        android:id="@+id/parks_btn"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/mainspot"
+        android:layout_marginTop="20dp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        ></ImageView>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parks"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:textSize="20dp"
+        android:textColor="#031A2C"
+        android:gravity="center_horizontal"></TextView>
+</LinearLayout>
+</ScrollView>
+    </RelativeLayout>

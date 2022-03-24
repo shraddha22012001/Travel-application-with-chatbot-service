@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.tourandtravelmanagement">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TourAndTravelManagement"
+        tools:replace="android:theme">
+        <activity android:name=".User.HotelDetailsActivity"></activity>
+        <activity android:name=".Admin.MaintainRestaurantsDetailsActivity" />
+        <activity android:name=".Admin.MaintainParksDetailsActivity" />
+        <activity android:name=".Admin.MaintainMainspotsDetailsActivity" />
+        <activity android:name=".Admin.MaintainHoteldetailsActivity" />
+        <activity android:name=".Admin.MaintainParksActivity" />
+        <activity android:name=".Admin.MaintainMainspotsActivity" />
+        <activity android:name=".Admin.MaintainRestaurantsActivity" />
+        <activity android:name=".Admin.MaintainHotelActivity" />
+        <activity android:name=".Admin.AdminMaintainActivity" />
+        <activity android:name=".User.MainSpotsDetailsActivity" />
+        <activity android:name=".User.ParkDetailsActivity" />
+        <activity android:name=".User.PlaceDetailsActivity" />
+        <activity android:name=".User.ParksActivity" />
+        <activity android:name=".User.RestaurantsActivity" />
+        <activity android:name=".User.MainSpotActivity" />
+        <activity android:name=".User.HotelActivity" />
+        <activity android:name=".Admin.AddNewParksActivity" />
+        <activity android:name=".Admin.AddNewRestuarantActivity" />
+        <activity android:name=".Admin.AddNewHotelActivity" />
+        <activity android:name=".Admin.AddNewPlaceActivity" />
+        <activity android:name=".User.MapActivity" />
+        <activity android:name=".User.securityquestionActivity" />
+        <activity android:name=".User.UpdateProfileActivity" />
+        <activity android:name=".Admin.AdminActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".Registeractivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

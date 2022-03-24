@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.securityquestionActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:id="@+id/reset_1"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:id="@+id/Page_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Reset Password"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"></TextView>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/find_phone_no"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/reset_1"
+        android:hint="  Please  write your Phone Number...."
+        android:background="@drawable/input_design1"
+        android:padding="4dp"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_margin="15dp"></EditText>
+
+    <TextView
+        android:id="@+id/reset_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer the following Security Questions?"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/find_phone_no"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/Question_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/reset_2"
+        android:hint="  What is Your Mother Name?"
+        android:background="@drawable/input_design1"
+        android:padding="4dp"
+        android:textColorHint="@color/black"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_margin="15dp"></EditText>
+    <EditText
+        android:id="@+id/Question_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Question_1"
+        android:hint="What is your pet name?"
+        android:background="@drawable/input_design1"
+        android:padding="4dp"
+        android:textColorHint="@color/black"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_margin="15dp"></EditText>
+    <Button
+
+        android:id="@+id/Verify_btn"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Question_2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:layout_marginTop="50dp"
+        android:background="@color/black"
+        android:padding="17dp"
+        android:text="Verify..."
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.HotelDetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <com.rey.material.widget.ImageView
+
+            android:id="@+id/product_image_details"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+
+            />
+        <com.rey.material.widget.TextView
+            android:id="@+id/product_name_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Place Name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+        <com.rey.material.widget.TextView
+            android:id="@+id/product_price_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Place City"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <com.rey.material.widget.TextView
+            android:id="@+id/product_address_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Place address"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <com.rey.material.widget.TextView
+            android:id="@+id/product_description_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Place Description"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/pd_add_to_cart_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="90dp"
+            android:background="#68BDC6"
+            android:text="Map"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

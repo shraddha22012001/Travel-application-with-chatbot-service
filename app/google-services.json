@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "395772248485",
+    "project_id": "tour-and-travel-management",
+    "storage_bucket": "tour-and-travel-management.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395772248485:android:e344b5e45bcc755597e84c",
+        "android_client_info": {
+          "package_name": "com.example.tourandtravelmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395772248485-l35s0a2o8crvgjhpirs4n8tnq10gsdp3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tourandtravelmanagement",
+            "certificate_hash": "d7f55d83d1933ca238c21c9d1e52129272d3d6db"
+          }
+        },
+        {
+          "client_id": "395772248485-pd41n2lphhi7v4lfooakqp363pmgaki0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX2cUXtD7D83ddTlzEDIm1wcbs0thc3TM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395772248485-pd41n2lphhi7v4lfooakqp363pmgaki0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

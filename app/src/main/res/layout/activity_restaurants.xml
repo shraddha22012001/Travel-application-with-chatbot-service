@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.RestaurantsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0097A7"
+        android:id="@+id/r5_11"
+        android:layout_alignParentTop="true"
+        >
+        <EditText
+            android:id="@+id/search_product_name"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="Resort Name"
+            android:textColorHint="#000202"
+            android:background="#D0E4E6"
+            android:textColor="#09A4B5"
+            android:padding="6dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" />
+
+        <Button
+            android:id="@+id/search_product_btn"
+            android:layout_toRightOf="@+id/search_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Search"
+            android:background="#09A4B5"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_list"
+        android:layout_below="@+id/r5_11"
+
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bkhome"
+    tools:context=".HomeActivity">
+
+
+    <LinearLayout
+        android:id="@+id/welcometag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F0DBF3"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:id="@+id/Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="Welcome To Pune"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/black"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_logout_24" />
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_below="@+id/welcometag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical">
+
+<ImageView
+    android:id="@+id/map_btn"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:src="@drawable/maps"
+    android:layout_marginTop="20dp"
+    android:layout_margin="30dp"
+    android:layout_gravity="center"
+    ></ImageView>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find way"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:textSize="20dp"
+        android:textColor="#031A2C"
+        android:gravity="center_horizontal"></TextView>
+    <ImageView
+        android:id="@+id/mainspot_btn"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/mainspots"
+        android:layout_marginTop="20dp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        ></ImageView>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Spots"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:textSize="20dp"
+        android:textColor="#031A2C"
+        android:gravity="center_horizontal"></TextView>
+    <ImageView
+        android:id="@+id/Hotels_btn"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/hotels"
+        android:layout_marginTop="20dp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        ></ImageView>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hotels"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:textSize="20dp"
+        android:textColor="#031A2C"
+        android:gravity="center_horizontal"></TextView>
+    <ImageView
+        android:id="@+id/resturants_btn"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/restaurants"
+        android:layout_marginTop="20dp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        ></ImageView>
+    <TextView
+        android:textColor="#031A2C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resorts"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"></TextView>
+                <ImageView
+                    android:id="@+id/parks_btn"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/mainspot"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="30dp"
+                    android:layout_gravity="center"
+                    ></ImageView>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Parks"
+                    android:textAlignment="center"
+                    android:textStyle="italic|bold"
+                    android:textSize="20dp"
+                    android:textColor="#031A2C"
+                    android:gravity="center_horizontal"></TextView>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

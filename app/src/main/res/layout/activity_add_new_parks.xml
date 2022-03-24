@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkhome"
+    tools:context=".Admin.AddNewParksActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+    <ImageView
+
+        android:id="@+id/select_product"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:src="@drawable/select_product_image"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:layout_gravity="center"
+        >
+
+    </ImageView>
+    <EditText
+
+        android:id="@+id/place_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="40dp"
+        android:background="@drawable/input_design1"
+        android:inputType="textMultiLine"
+        android:hint="Park  Name..."
+        android:textColorHint="#474242"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="8dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/place_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_design1"
+        android:inputType="textMultiLine"
+        android:hint="description about park..."
+        android:textColorHint="#474242"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="8dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/place_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_design1"
+        android:inputType="textMultiLine"
+        android:hint="City..."
+        android:textColorHint="#474242"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="8dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/place_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_design1"
+        android:inputType="textMultiLine"
+        android:hint="Address..."
+        android:textColorHint="#474242"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="8dp"
+        ></EditText>
+    <Button
+
+        android:id="@+id/add_new_place_btn"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/black"
+        android:padding="17dp"
+        android:text="Add Park"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="50dp"
+        android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

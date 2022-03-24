@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.MaintainHoteldetailsActivity"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+
+        <ImageView
+            android:id="@+id/Admin_place_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            >
+        </ImageView>
+        <EditText
+            android:id="@+id/Admin_place_nm"
+            android:background="@drawable/input_design1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Place Name"
+            android:padding="6dp"
+            android:layout_marginTop="5dp"
+
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+        />
+
+        <EditText
+            android:id="@+id/Admin_place_descrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+
+            android:background="@drawable/input_design1"
+            android:hint="Place Description"
+            android:padding="6dp"
+            android:textSize="18dp"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/Admin_place_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:padding="6dp"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/input_design1"
+            android:hint="Place City"
+            android:textSize="22dp"
+            ></EditText>
+        <EditText
+            android:id="@+id/Admin_place_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:padding="6dp"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/input_design1"
+            android:hint="Place Address"
+            android:textSize="22dp"
+            ></EditText>
+        <Button
+
+            android:id="@+id/Apply_changes_btn"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#61DEEC"
+            android:padding="10dp"
+            android:text="Apply Changes"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        <Button
+
+            android:id="@+id/Delete_product_btn"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#61DEEC"
+            android:padding="10dp"
+            android:text="Delete This Hotel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="50dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</ScrollView>

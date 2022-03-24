@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.UpdateProfileActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <TextView
+                    android:id="@+id/update_setting_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setting_profile_image"
+        android:layout_width="130dp"
+        android:src="@drawable/profile"
+        android:layout_below="@+id/app_bar_settings"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        >
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <TextView
+        android:id="@+id/profile_image_change_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Your Profile"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/setting_profile_image"
+        />
+
+    <EditText
+        android:id="@+id/setting_phone_no"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/profile_image_change_btn"
+        android:hint="  Phone Number...."
+        android:background="@drawable/input_design1"
+        android:inputType="number"
+        android:padding="4dp"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_margin="15dp">
+
+    </EditText>
+    <EditText
+        android:id="@+id/setting_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/setting_phone_no"
+        android:hint="  Full Name...."
+        android:background="@drawable/input_design1"
+        android:padding="4dp"
+        android:paddingLeft="30dp"
+        android:layout_margin="15dp">
+
+    </EditText>
+    <EditText
+        android:id="@+id/setting_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/setting_full_name"
+        android:hint="  Address...."
+        android:background="@drawable/input_design1"
+        android:padding="4dp"
+        android:paddingLeft="30dp"
+        android:layout_margin="15dp">
+
+    </EditText>
+    <Button
+
+        android:id="@+id/security_questions_btn"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_address"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:layout_marginTop="50dp"
+        android:background="@color/black"
+        android:padding="17dp"
+        android:text="Set Security Questions"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#6FF1EEEE"
+    tools:context=".User.MapActivity">
+    <ImageView
+        android:id="@+id/track_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mapicon"
+        android:layout_marginTop="100dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/textview_marquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/track_img"
+        android:text="Your Default source location will be your current location, so in that case no need provid it in source box"
+        android:textColor="@color/teal_200"
+        android:textStyle="italic|bold"
+        android:textSize="30dp"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        />
+<EditText
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/et_source"
+    android:hint="Enter Source Location"
+    android:padding="12dp"
+    android:layout_below="@+id/textview_marquee"
+    android:textColor="@color/black"
+    android:background="@drawable/input_design"
+    ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_destination"
+        android:hint="Enter Destination Location"
+        android:layout_marginTop="30dp"
+        android:padding="12dp"
+        android:layout_below="@+id/et_source"
+        android:textColor="@color/black"
+        android:background="@drawable/input_design"
+        ></EditText>
+    <Button
+        android:id="@+id/bt_track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display  track"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_below="@+id/et_destination"
+        android:background="@drawable/btn_design"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+
+        />
+</RelativeLayout>
