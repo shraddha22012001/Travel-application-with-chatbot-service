@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8C8585"
+    tools:context=".User.BookHotelActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please write your Booking Details"
+        android:textColor="#2E0312"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:gravity="center_horizontal">
+
+    </TextView>
+    <EditText
+        android:id="@+id/booking_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Your Name .."
+        android:textColorHint="#686060"
+        android:background="@color/white"
+        android:padding="7dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/booking_phnno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booking_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Your Phone Number .."
+        android:textColorHint="#686060"
+        android:inputType="phone"
+        android:background="@color/white"
+        android:padding="7dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/booking_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booking_phnno"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Your Permanent Address.."
+        android:textColorHint="#686060"
+        android:background="@color/white"
+        android:padding="7dp"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/no_rooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booking_address"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Number of Rooms.."
+        android:inputType="number"
+        android:textColorHint="#686060"
+        android:background="@color/white"
+        android:padding="7dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/no_adults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_rooms"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Number of Adults.."
+        android:textColorHint="#686060"
+        android:inputType="number"
+        android:background="@color/white"
+        android:padding="7dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/no_Children"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_adults"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Number of Children.."
+        android:textColorHint="#686060"
+        android:background="@color/white"
+        android:inputType="number"
+        android:padding="7dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/visit_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_Children"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="From .."
+        android:inputType="date"
+        android:textColorHint="#686060"
+        android:background="@color/white"
+        android:padding="7dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/no_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visit_date"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Number of days.."
+        android:textColorHint="#686060"
+        android:background="@color/white"
+        android:padding="7dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/check_in_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leave_date"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Check-in Time.."
+        android:textColorHint="#686060"
+        android:inputType="time"
+        android:background="@color/white"
+        android:padding="7dp"
+        ></EditText>
+        <Button
+
+            android:id="@+id/confirm_booking_btn"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#FF4004"
+            android:padding="10dp"
+            android:text="Confirm Booking"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="100dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

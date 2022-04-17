@@ -74,7 +74,8 @@ private ImageView Hoteladd,mainspotadd,restaurantsadd,parksadd;
         Hotel_order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(AdminActivity.this, AdminHotelBookingsActivity.class);
+                startActivity(intent);
             }
         });
     }

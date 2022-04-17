@@ -13,12 +13,15 @@ import com.example.tourandtravelmanagement.User.MapActivity;
 import com.example.tourandtravelmanagement.User.ParksActivity;
 import com.example.tourandtravelmanagement.User.RestaurantsActivity;
 import com.example.tourandtravelmanagement.User.UpdateProfileActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import io.paperdb.Paper;
 
 public class HomeActivity extends AppCompatActivity {
     private ImageView Map_Button,Main_spt_Button,Hotels_Botton,logout_Botton,Restaurants_btn,Profile_update,Parks_btn;
+    private FloatingActionButton chatbot;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
 
 
@@ -30,8 +33,12 @@ public class HomeActivity extends AppCompatActivity {
         logout_Botton=(ImageView)findViewById(R.id.logout);
         Restaurants_btn=(ImageView)findViewById(R.id.resturants_btn);
         Profile_update=(ImageView)findViewById(R.id.Profile);
+        chatbot=(FloatingActionButton)findViewById(R.id.fab);
 Parks_btn=(ImageView)findViewById(R.id.parks_btn);
+
+
 Parks_btn.setOnClickListener(new View.OnClickListener() {
+
     @Override
     public void onClick(View v) {
         Intent intent=new Intent(HomeActivity.this, ParksActivity.class);
@@ -81,5 +88,14 @@ Parks_btn.setOnClickListener(new View.OnClickListener() {
             finish();
          }
      });
+
+
+     chatbot.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+
+         }
+     });
+
     }
 }

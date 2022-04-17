@@ -86,9 +86,23 @@
             android:layout_marginTop="50dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:layout_marginBottom="90dp"
+
             android:background="#68BDC6"
             android:text="Map"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/hotel_book_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="90dp"
+            android:background="#FF3D00"
+            android:text="Book Hotel"
             android:textColor="@color/white"
             android:textSize="18dp"
             />

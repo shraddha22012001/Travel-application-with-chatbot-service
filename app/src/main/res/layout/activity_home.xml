@@ -33,7 +33,7 @@
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:text="Welcome To Pune"
-            android:textAlignment="center"
+
             android:textColor="@color/black"
             android:textSize="25dp"
             android:textStyle="bold|italic" />
@@ -48,6 +48,19 @@
             android:src="@drawable/ic_baseline_logout_24" />
     </LinearLayout>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="1dp"
+        android:elevation="6dp"
+        android:backgroundTint="@color/black"
+        android:src= "@drawable/ic_baseline_wechat_24" />
     <ScrollView
             android:layout_below="@+id/welcometag"
             android:layout_width="match_parent"
@@ -153,6 +166,10 @@
                     android:textSize="20dp"
                     android:textColor="#031A2C"
                     android:gravity="center_horizontal"></TextView>
-    </LinearLayout>
+
+
+            </LinearLayout>
+
 </ScrollView>
+
 </RelativeLayout>

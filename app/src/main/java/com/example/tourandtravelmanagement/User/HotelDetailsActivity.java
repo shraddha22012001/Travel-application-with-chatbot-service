@@ -38,7 +38,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class HotelDetailsActivity extends AppCompatActivity {
-    private Button mapBtn;
+    private Button mapBtn,bookhotelbtn;
     private ImageView productImage;
     private TextView productDescription, productName, productCity,productAddress;
     private String productId = "";
@@ -56,6 +56,7 @@ public class HotelDetailsActivity extends AppCompatActivity {
         productCity = (TextView) findViewById(R.id.product_price_details);
 
         mapBtn = (Button) findViewById(R.id.pd_add_to_cart_btn);
+        bookhotelbtn = (Button) findViewById(R.id.hotel_book_btn);
         getProductDetails(productId);
 
     }
@@ -79,6 +80,15 @@ public class HotelDetailsActivity extends AppCompatActivity {
                     productAddress.setText(hotels.getAddress());
                     Picasso.get().load(hotels.getImage()).into(productImage);
                     String sDestination =hotels.getAddress();
+                    bookhotelbtn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent=new Intent(HotelDetailsActivity.this, BookHotelActivity.class);
+                            intent.putExtra("pid",hotels.getPid());
+                            startActivity(intent);
+                        }
+                    });
+
                     mapBtn.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
